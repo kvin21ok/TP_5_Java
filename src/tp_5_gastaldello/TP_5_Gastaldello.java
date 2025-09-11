@@ -8,25 +8,35 @@ public class TP_5_Gastaldello {
 
     public static void main(String[] args) {
         
-        // Crear el Autor
-        Autor autor = new Autor("Gabriel García Márquez", "Colombiana");
+        // Crear el Banco
+        Banco banco = new Banco("Banco Patagonia", "30-12345678-9");
 
-        // Crear la Editorial
-        Editorial editorial = new Editorial("Sudamericana", "Buenos Aires, Argentina");
+        // Crear el Cliente
+        Cliente cliente = new Cliente("Kevin Gastaldello", "12345678");
 
-        // Crear el Libro
-        Libro libro = new Libro("Cien años de soledad", "978-3-16-148410-0");
-        libro.setAutor(autor);         // asignar autor (unidireccional)
-        libro.setEditorial(editorial); // asignar editorial (agregación)
+        // Crear la Tarjeta de Crédito
+        TarjetaDeCredito tarjeta = new TarjetaDeCredito("1234-5678-9012-3456", "12/28");
 
-        // Imprimir información del Libro
-        System.out.println("=== Información del Libro ===");
-        System.out.println("Título: " + libro.getTitulo());
-        System.out.println("ISBN: " + libro.getIsbn());
-        System.out.println("Autor: " + libro.getAutor().getNombre() +
-                           ", Nacionalidad: " + libro.getAutor().getNacionalidad());
-        System.out.println("Editorial: " + libro.getEditorial().getNombre() +
-                           ", Dirección: " + libro.getEditorial().getDireccion());
+        // Vincular las relaciones bidireccionales y agregación
+        tarjeta.setCliente(cliente);
+        cliente.setTarjeta(tarjeta);
+        tarjeta.setBanco(banco);
+
+        // Imprimir información de la Tarjeta
+        System.out.println("=== Información de la Tarjeta de Crédito ===");
+        System.out.println("Número: " + tarjeta.getNumero());
+        System.out.println("Fecha de Vencimiento: " + tarjeta.getFechaVencimiento());
+        System.out.println("Cliente: " + tarjeta.getCliente().getNombre() +
+                           ", DNI: " + tarjeta.getCliente().getDni());
+        System.out.println("Banco: " + tarjeta.getBanco().getNombre() +
+                           ", CUIT: " + tarjeta.getBanco().getCuit());
+
+        // Imprimir información del Cliente
+        System.out.println("\n=== Información del Cliente ===");
+        System.out.println("Nombre: " + cliente.getNombre());
+        System.out.println("DNI: " + cliente.getDni());
+        System.out.println("Tarjeta Número: " + cliente.getTarjeta().getNumero());
+        System.out.println("Tarjeta Vencimiento: " + cliente.getTarjeta().getFechaVencimiento());
         
 
     }
