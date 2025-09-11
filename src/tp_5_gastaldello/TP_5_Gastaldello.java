@@ -6,9 +6,6 @@ package tp_5_gastaldello;
  */
 public class TP_5_Gastaldello {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
 
