@@ -1,5 +1,9 @@
 package tp_5_gastaldello;
 
+import tp_5_gastaldello.ejercicio_4.Banco;
+import tp_5_gastaldello.ejercicio_4.Cliente;
+import tp_5_gastaldello.ejercicio_4.TarjetaDeCredito;
+
 /**
  *
  * @author Kevin Gastaldello

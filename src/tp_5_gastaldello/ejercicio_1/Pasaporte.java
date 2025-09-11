@@ -1,4 +1,6 @@
-package tp_5_gastaldello;
+package tp_5_gastaldello.ejercicio_1;
+
+import tp_5_gastaldello.ejercicio_1.Titular;
 
 /**
  *
