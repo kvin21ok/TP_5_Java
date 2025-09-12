@@ -41,6 +41,9 @@ public class Usuario {
     
     public void setCelular(Celular celular){
         this.celular = celular;
+        if (celular != null && celular.getUsuario() != this){
+            celular.setUsuario(this);
+        }
     }
    
    

@@ -11,13 +11,11 @@ public class Main {
         Bateria bateria = new Bateria("ModeloX", 4000);
 
         // 2️⃣ Crear el celular
-        Celular celular = new Celular("123456789012345", "Samsung", "A51");
-        celular.setBateria(bateria); // asignar batería
+        Celular celular = new Celular("123456789012345", "Samsung", "A51", bateria);
 
         // 3️⃣ Crear el usuario
         Usuario usuario = new Usuario("Kevin Gastaldello", "12345678");
-        usuario.setCelular(celular); // vincular usuario con celular
-        celular.setUsuario(usuario); // vincular celular con usuario (bidireccional)
+        usuario.setCelular(celular); // vincula usuario con celular
 
         // 4️⃣ Imprimir información
         System.out.println("=== Información del Celular ===");
