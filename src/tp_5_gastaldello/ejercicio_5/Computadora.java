@@ -13,9 +13,11 @@ public class Computadora {
     
     public Computadora(){}
     
-    public Computadora(String marca, String numeroSerie){
+    public Computadora(String marca, String numeroSerie, String modeloPlaca, String chipset, Propietario propietario){
         this.marca = marca;
         this.numeroSerie = numeroSerie;
+        this.placaMadre = new PlacaMadre(modeloPlaca, chipset);
+        this.propietario = propietario;
     }
     
     public String getMarca(){
@@ -34,9 +36,6 @@ public class Computadora {
     
     public PlacaMadre getPlacaMadre(){
         return placaMadre;
-    }
-    public void setPlacaMadre(PlacaMadre placaMadre){
-        this.placaMadre = placaMadre;
     }
     
     public Propietario getPropietario(){
