@@ -15,12 +15,10 @@ public class Main {
         Conductor conductor = new Conductor("Kevin Gastaldello", "LIC123456");
 
         // Crear Vehículo
-        Vehiculo vehiculo = new Vehiculo("ABC123", "Ford Mustang");
+        Vehiculo vehiculo = new Vehiculo("ABC123", "Ford Mustang", motor); // agregacion
 
         // Vincular relaciones
-        vehiculo.setMotor(motor);          // Agregación
         vehiculo.setConductor(conductor);  // Asociación bidireccional
-        conductor.setVehiculo(vehiculo);   // Asociación bidireccional
 
         // Imprimir información del Vehículo
         System.out.println("=== Información del Vehículo ===");

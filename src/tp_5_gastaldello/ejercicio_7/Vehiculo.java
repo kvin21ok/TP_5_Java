@@ -13,9 +13,10 @@ public class Vehiculo {
     
     public Vehiculo(){}
     
-    public Vehiculo(String patente, String modelo){
+    public Vehiculo(String patente, String modelo, Motor motor){
         this.patente = patente;
         this.modelo = modelo;
+        this.motor = motor;
     }
     
     public String getPatente(){
@@ -44,6 +45,9 @@ public class Vehiculo {
     }
     public void setConductor(Conductor conductor){
         this.conductor = conductor;
+        if (conductor != null && conductor.getVehiculo() != this){
+            conductor.setVehiculo(this);
+        }
     }
 
 }

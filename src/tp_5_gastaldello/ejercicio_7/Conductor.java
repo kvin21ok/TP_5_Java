@@ -36,6 +36,9 @@ public class Conductor {
     }
     public void setVehiculo(Vehiculo vehiculo){
         this.vehiculo = vehiculo;
+        if (vehiculo != null && vehiculo.getConductor() != this){
+            vehiculo.setConductor(this);
+        }
     }
 
 }
