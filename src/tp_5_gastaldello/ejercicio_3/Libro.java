@@ -13,9 +13,10 @@ public class Libro {
     
     public Libro(){}
     
-    public Libro(String titulo, String isbn){
+    public Libro(String titulo, String isbn, Editorial editorial){
         this.titulo = titulo;
         this.isbn = isbn;
+        this.editorial = editorial;
     }
     
     public String getTitulo(){

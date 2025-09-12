@@ -14,9 +14,8 @@ public class Main {
         Editorial editorial = new Editorial("Sudamericana", "Buenos Aires, Argentina");
 
         // Crear el Libro
-        Libro libro = new Libro("Cien años de soledad", "978-3-16-148410-0");
+        Libro libro = new Libro("Cien años de soledad", "978-3-16-148410-0", editorial); // agregacion
         libro.setAutor(autor);         // asignar autor (unidireccional)
-        libro.setEditorial(editorial); // asignar editorial (agregación)
 
         // Imprimir información del Libro
         System.out.println("=== Información del Libro ===");
