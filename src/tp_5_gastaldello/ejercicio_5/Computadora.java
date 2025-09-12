@@ -13,11 +13,10 @@ public class Computadora {
     
     public Computadora(){}
     
-    public Computadora(String marca, String numeroSerie, String modeloPlaca, String chipset, Propietario propietario){
+    public Computadora(String marca, String numeroSerie, String modeloPlaca, String chipset){
         this.marca = marca;
         this.numeroSerie = numeroSerie;
         this.placaMadre = new PlacaMadre(modeloPlaca, chipset);
-        this.propietario = propietario;
     }
     
     public String getMarca(){
@@ -43,6 +42,9 @@ public class Computadora {
     }
     public void setPropietario(Propietario propietario){
         this.propietario = propietario;
+        if (propietario != null && propietario.getComputadora() != this){
+            propietario.setComputadora(this);
+        }
     }
 
 }

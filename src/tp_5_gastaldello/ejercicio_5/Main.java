@@ -14,8 +14,7 @@ public class Main {
                 "Dell",
                 "SN12345",
                 "ASUS ROG",
-                "Z490",
-                propietario
+                "Z490"
         );
         
         // Asignamos la computadora al propietario (asociación bidireccional)

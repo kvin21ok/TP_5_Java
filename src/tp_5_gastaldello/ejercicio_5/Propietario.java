@@ -36,6 +36,9 @@ public class Propietario {
     }
     public void setComputadora(Computadora computadora){
         this.computadora = computadora;
+        if (computadora != null && computadora.getPropietario() != this){
+            computadora.setPropietario(this);
+        }
     }
 
 }
