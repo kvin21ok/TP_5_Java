@@ -8,7 +8,10 @@ public class Main {
     public static void main(String[] args) {
         
         Titular titular = new Titular("Kevin Gastaldello", "12345678");
-        Pasaporte pasaporte = new Pasaporte("A1234567", "2025-09-11", "foto123.jpg", "JPEG", titular);
+        Pasaporte pasaporte = new Pasaporte("A1234567", "2025-09-11", "foto123.jpg", "JPEG");
+        
+        // relacion bidireccional
+        titular.setPasaporte(pasaporte);
 
         System.out.println("=== Información del Pasaporte ===");
         System.out.println("Número: " + pasaporte.getNumero());
