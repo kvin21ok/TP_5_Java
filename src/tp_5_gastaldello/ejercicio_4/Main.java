@@ -14,12 +14,10 @@ public class Main {
         Cliente cliente = new Cliente("Kevin Gastaldello", "12345678");
 
         // Crear la Tarjeta de Crédito
-        TarjetaDeCredito tarjeta = new TarjetaDeCredito("1234-5678-9012-3456", "12/28");
+        TarjetaDeCredito tarjeta = new TarjetaDeCredito("1234-5678-9012-3456", "12/28", banco); // agregacion
 
-        // Vincular las relaciones bidireccionales y agregación
-        tarjeta.setCliente(cliente);
+        // Vincular las relaciones bidireccionales
         cliente.setTarjeta(tarjeta);
-        tarjeta.setBanco(banco);
 
         // Imprimir información de la Tarjeta
         System.out.println("=== Información de la Tarjeta de Crédito ===");

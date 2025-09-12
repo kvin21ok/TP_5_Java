@@ -38,6 +38,9 @@ public class Cliente {
     }
     public void setTarjeta(TarjetaDeCredito tarjeta){
         this.tarjeta = tarjeta;
+        if (tarjeta != null && tarjeta.getCliente() != this){
+            tarjeta.setCliente(this);
+        }
     }
 
 }

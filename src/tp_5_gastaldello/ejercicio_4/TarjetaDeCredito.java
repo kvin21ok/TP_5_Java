@@ -13,9 +13,10 @@ public class TarjetaDeCredito {
     
     public TarjetaDeCredito(){}
     
-    public TarjetaDeCredito(String numero, String fechaVencimiento){
+    public TarjetaDeCredito(String numero, String fechaVencimiento, Banco banco){
         this.numero = numero;
         this.fechaVencimiento = fechaVencimiento;
+        this.banco = banco;
     }
     
     public String getNumero(){
@@ -37,6 +38,9 @@ public class TarjetaDeCredito {
     }
     public void setCliente(Cliente cliente){
         this.cliente = cliente;
+        if (cliente != null && cliente.getTarjeta() != this){
+            cliente.setTarjeta(this);
+        }
     }
     
     public Banco getBanco(){
