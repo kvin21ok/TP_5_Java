@@ -15,11 +15,10 @@ public class Main {
         Mesa mesa = new Mesa(10, 4);
 
         // Crear Reserva
-        Reserva reserva = new Reserva("2025-09-12", "20:00");
+        Reserva reserva = new Reserva("2025-09-12", "20:00", mesa); // agregacion
 
         // Vincular relaciones
         reserva.setCliente(cliente);  // Asociación unidireccional
-        reserva.setMesa(mesa);        // Agregación
 
         // Imprimir información de la Reserva
         System.out.println("=== Información de la Reserva ===");

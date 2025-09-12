@@ -13,9 +13,10 @@ public class Reserva {
     
     public Reserva(){}
     
-    public Reserva(String fecha, String hora){
+    public Reserva(String fecha, String hora, Mesa mesa){
         this.fecha = fecha;
         this.hora = hora;
+        this.mesa = mesa;
     }
     
     public String getFecha(){
