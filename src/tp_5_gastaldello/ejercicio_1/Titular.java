@@ -15,20 +15,28 @@ public class Titular {
         this.dni = dni;
     }
     
-    public void setPasaporte(Pasaporte pasaporte){
-        this.pasaporte = pasaporte;
-    }
-    
-    public Pasaporte getPasaporte(){
-        return pasaporte;
-    }
-    
     public String getNombre(){
         return nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }
     
     public String getDni(){
         return dni;
     }
+    public void setDni(String dni){
+        this.dni = dni;
+    }
 
+    public Pasaporte getPasaporte(){
+        return pasaporte;
+    }
+    public void setPasaporte(Pasaporte pasaporte){
+        this.pasaporte = pasaporte;
+    }    
+    
+    
+    
+    
 }

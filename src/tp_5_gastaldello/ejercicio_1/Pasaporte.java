@@ -13,12 +13,28 @@ public class Pasaporte {
     private Foto foto;
     private Titular titular;
     
-    public Pasaporte(String numero, String fechaEmision, Foto foto, Titular titular){
+    public Pasaporte(String numero, String fechaEmision, String imagen, String formato, Titular titular){
         this.numero = numero;
         this.fechaEmision = fechaEmision;
-        this.foto = foto;
+        this.foto = new Foto(imagen, formato);
         this.titular = titular;
-        titular.setPasaporte(this);
+        if (titular != null){
+            titular.setPasaporte(this);
+        }
+    }
+    
+    public String getNumero(){
+        return numero;
+    }
+    public void setNumero(String numero){
+        this.numero = numero;
+    }
+    
+    public String getFechaEmision(){
+        return fechaEmision;
+    }
+    public void setFechaEmision(String fechaEmision){
+        this.fechaEmision = fechaEmision;
     }
     
     public Foto getFoto(){
@@ -28,13 +44,12 @@ public class Pasaporte {
     public Titular getTitular(){
         return titular;
     }
-    
-    public String getNumero(){
-        return numero;
+    public void setTitular(Titular titular) {
+        this.titular = titular;
+        if (titular != null) {
+            titular.setPasaporte(this);
+        }
     }
     
-    public String getFechaEmision(){
-        return fechaEmision;
-    }
 
 }
