@@ -35,6 +35,9 @@ public class Main {
         System.out.println("Tarjeta Número: " + cliente.getTarjeta().getNumero());
         System.out.println("Tarjeta Vencimiento: " + cliente.getTarjeta().getFechaVencimiento());
         
+        tarjeta.setBanco(null);
+        System.out.println(banco.getNombre());
+        
 
     }
 

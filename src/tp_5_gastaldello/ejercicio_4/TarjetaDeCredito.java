@@ -22,15 +22,9 @@ public class TarjetaDeCredito {
     public String getNumero(){
         return numero;
     }
-    public void setNumero(String numero){
-        this.numero = numero;
-    }
     
     public String getFechaVencimiento(){
         return fechaVencimiento;
-    }
-    public void setFechaVencimiento(String fechaVencimiento){
-        this.fechaVencimiento = fechaVencimiento;
     }
     
     public Cliente getCliente(){
@@ -47,7 +41,11 @@ public class TarjetaDeCredito {
         return banco;
     }
     public void setBanco(Banco banco){
-        this.banco = banco;
+        if (banco != null){
+            this.banco = banco;
+        } else {
+            System.out.println("La tarjeta no tiene banco pero el banco sigue existiendo");
+        }
     }
 
 }
