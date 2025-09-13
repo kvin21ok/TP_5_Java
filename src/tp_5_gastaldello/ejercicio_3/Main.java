@@ -25,6 +25,9 @@ public class Main {
                            ", Nacionalidad: " + libro.getAutor().getNacionalidad());
         System.out.println("Editorial: " + libro.getEditorial().getNombre() +
                            ", Dirección: " + libro.getEditorial().getDireccion());
+        
+        libro.setEditorial(null);
+        System.out.println(editorial.getNombre());
     }
 
 }
