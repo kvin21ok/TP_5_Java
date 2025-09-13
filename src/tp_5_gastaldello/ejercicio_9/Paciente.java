@@ -19,15 +19,9 @@ public class Paciente {
     public String getNombre(){
         return nombre;
     }
-    public void setNombre(String nombre){
-        this.nombre = nombre;
-    }
     
     public String getObraSocial(){
         return obraSocial;
-    }
-    public void setObraSocial(String obraSocial){
-        this.obraSocial = obraSocial;
     }
 
 }
