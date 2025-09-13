@@ -35,8 +35,4 @@ public class Documento {
     public FirmaDigital getFirma(){
         return firma;
     }
-    public void setFirma(FirmaDigital firma){
-        this.firma = firma;
-    }
-
 }

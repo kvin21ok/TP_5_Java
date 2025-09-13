@@ -20,21 +20,19 @@ public class FirmaDigital {
     public String getCodigoHash(){
         return codigoHash;
     }
-    public void setCodigoHash(String codigoHash){
-        this.codigoHash = codigoHash;
-    }
     
     public String getFecha(){
         return fecha;
-    }
-    public void setFecha(String fecha){
-        this.fecha = fecha;
     }
     
     public Usuario getUsuario(){
         return usuario;
     }
     public void setUsuario(Usuario usuario){
-        this.usuario = usuario;
+        if (usuario != null){
+            this.usuario = usuario;
+        } else {
+            System.out.println("La firma no tiene usuario pero el usuario sigue existiendo");
+        }
     }
 }
