@@ -22,15 +22,9 @@ public class Pasaporte {
     public String getNumero(){
         return numero;
     }
-    public void setNumero(String numero){
-        this.numero = numero;
-    }
     
     public String getFechaEmision(){
         return fechaEmision;
-    }
-    public void setFechaEmision(String fechaEmision){
-        this.fechaEmision = fechaEmision;
     }
     
     public Foto getFoto(){
