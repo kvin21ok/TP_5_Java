@@ -18,14 +18,8 @@ public class Motor {
     public String getTipo(){
         return tipo;
     }
-    public void setTipo(String tipo){
-        this.tipo = tipo;
-    }
     
     public String getNumeroSerie(){
         return numeroSerie;
-    }
-    public void setNumeroSerie(String numeroSerie){
-        this.numeroSerie = numeroSerie;
     }
 }

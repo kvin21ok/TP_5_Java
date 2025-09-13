@@ -22,22 +22,20 @@ public class Vehiculo {
     public String getPatente(){
         return patente;
     }
-    public void setPatente(String patente){
-        this.patente = patente;
-    }
     
     public String getModelo(){
         return modelo;
-    }
-    public void setModelo(String modelo){
-        this.modelo = modelo;
     }
     
     public Motor getMotor(){
         return motor;
     }
     public void setMotor(Motor motor){
-        this.motor = motor;
+        if (motor != null){
+            this.motor = motor;
+        } else {
+            System.out.println("El vehiculo no tiene motor pero el motor sigue existiendo");
+        }
     }
     
     public Conductor getConductor(){

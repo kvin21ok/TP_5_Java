@@ -33,6 +33,9 @@ public class Main {
         System.out.println("Licencia: " + conductor.getLicencia());
         System.out.println("Vehículo Patente: " + conductor.getVehiculo().getPatente());
         System.out.println("Vehículo Modelo: " + conductor.getVehiculo().getModelo());
+        
+        vehiculo.setMotor(null);
+        System.out.println(motor.getTipo());
     }
 
 }
