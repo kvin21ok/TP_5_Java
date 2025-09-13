@@ -32,6 +32,9 @@ public class Main {
         System.out.println("DNI: " + usuario.getDni());
         System.out.println("Celular IMEI: " + usuario.getCelular().getImei());
         System.out.println("Celular Marca: " + usuario.getCelular().getMarca());
+        
+        celular.setBateria(null);
+        System.out.println(bateria.getModelo());
     }
 
 }

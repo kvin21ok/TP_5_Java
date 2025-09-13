@@ -24,29 +24,24 @@ public class Celular {
     public String getImei(){
         return imei;
     }    
-    public void setImei(String imei){
-        this.imei = imei;
-    }
     
     public String getMarca(){
         return marca;
     }    
-    public void setMarca(String marca){
-        this.marca = marca;
-    }
     
     public String getModelo(){
         return modelo;
     }    
-    public void setModelo(String modelo){
-        this.modelo = modelo;
-    }
     
     public Bateria getBateria(){
         return bateria;
     }    
     public void setBateria(Bateria bateria){
-        this.bateria = bateria;
+        if (bateria != null){
+            this.bateria = bateria;
+        } else {
+            System.out.println("El celular no tiene bateria pero esta sigue existiendo");
+        }
     }
     
     public Usuario getUsuario(){
