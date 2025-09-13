@@ -22,15 +22,9 @@ public class Computadora {
     public String getMarca(){
         return marca;
     }
-    public void setMarca(String marca){
-        this.marca = marca;
-    }
     
     public String getNumeroSerie(){
         return numeroSerie;
-    }
-    public void setNumeroSerie(String numeroSerie){
-        this.numeroSerie = numeroSerie;
     }
     
     public PlacaMadre getPlacaMadre(){

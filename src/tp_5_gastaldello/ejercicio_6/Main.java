@@ -26,5 +26,8 @@ public class Main {
         System.out.println("Hora: " + reserva.getHora());
         System.out.println("Cliente: " + reserva.getCliente().getNombre() + ", Tel: " + reserva.getCliente().getTelefono());
         System.out.println("Mesa: Número " + reserva.getMesa().getNumero() + ", Capacidad: " + reserva.getMesa().getCapacidad());
+        
+        reserva.setMesa(null);
+        System.out.println(mesa.getNumero());
     }
 }
