@@ -13,6 +13,8 @@ public class Pasaporte {
     private Foto foto;
     private Titular titular;
     
+    public Pasaporte(){}
+    
     public Pasaporte(String numero, String fechaEmision, String imagen, String formato){
         this.numero = numero;
         this.fechaEmision = fechaEmision;

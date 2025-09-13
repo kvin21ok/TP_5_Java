@@ -10,6 +10,8 @@ public class Titular {
     private String dni;
     private Pasaporte pasaporte;
     
+    public Titular(){}
+    
     public Titular(String nombre, String dni){
         this.nombre = nombre;
         this.dni = dni;
